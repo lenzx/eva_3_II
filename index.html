@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body onload="cargar1(); music();">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="box1">
+                    <form action="./"  >
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre">
+                        </div>
+                        <div class="mb-3">
+                            <label for="apellido" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="apellido">
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="sexo" id="hombre" value="Hombre" checked>
+                            <label for="hombre" form="hombre" class="form-check-label" for="flexRadioDefault">
+                                Hombre
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="sexo" id="mujer" value="Mujer">
+                            <label for="mujer" class="form-check-label" for="flexRadioDefault">
+                                Mujer
+                            </label>
+                        </div>
+                        <div class="mb-3">
+                            <label for="age" class="form-label">Edad</label>
+                            <select class="form-select" aria-label="Default select example" name="edad" id="age">
+                                <option value="">Seleccione edad: </option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary" onclick="verificarDatos();">Agregar usuario</button>
+                    </form>
+                </div>
+                <div class="box2">
+                    <form action="./">
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">area de texto</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+                        </div>
+                        <br>
+                        <button type="submit" class="btn btn-primary" onclick="verificarTexto();">Verificar texto</button>
+                    </form>
+                </div>
+                <div class="box3">
+                    <div class="mb-3">
+                        <label for="tamaño" class="form-label">Tamaño</label>
+                        <select class="form-select" aria-label="Default select example" name="tamaño" id="tamaño">
+                            <option value="700px">Seleccione tamaño: </option>
+                            <option value="300px">pequeño</option>
+                            <option value="500px">mediano</option>
+                            <option value="700px">grande</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="color" class="form-label">Color</label>
+                        <select class="form-select" aria-label="Default select example" name="color" id="color">
+                            <option value="white">Seleccione color: </option>
+                            <option value="red">Rojo </option>
+                            <option value="blue">Azul</option>
+                            <option value="black">negro</option>
+                            <option value="violet">violeta</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="imagen" class="form-label">Imagen</label>
+                        <select class="form-select" aria-label="Default select example" name="imagen" id="imagen">
+                            <option value="khan.jpg">Seleccione imagen: </option>
+                            <option value="khan.jpg">Jaghatai Khan </option>
+                            <option value="dorn.jpg">Rogal Dorn</option>
+                            <option value="emperador.png">Emperador</option>
+                            <option value="fullgrim.jpg">Fullgrim</option>
+                        </select>
+                    </div>
+                    <div>Imagen:</div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="visible" id="visible" value="visible" checked>
+                        <label for="visible" class="form-check-label" for="flexRadioDefault">
+                            Visible
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="visible" id="noVisible" value="hidden">
+                        <label for="noVisible" class="form-check-label" for="flexRadioDefault">
+                            No visible
+                        </label>
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="realizarCambios();">realizar cambios</button>
+                </div>
+            </div>
+            <div class="col-md-6" id="contenedor">
+                <div class="img" id="img"> 
+                    <img id="img2" src="./img/khan.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
