@@ -1,6 +1,6 @@
 function music() {
     sonido = document.createElement("audio");
-    sonido.src = '../sound/Chayanne - Torero.mp3';
+    sonido.src = './sound/Chayanne - Torero.mp3';
     sonido.setAttribute("preload", "auto");
     sonido.setAttribute("controls", "none");
     sonido.style.display = "none"; // <-- oculto
@@ -94,7 +94,7 @@ function realizarCambios(){
     contenedor.style.background = obj['color']
     imagen.style.visibility = obj['visible']
     imagen.style.width = obj['tamaño']
-    imagen.setAttribute('src',`../img/${obj['imagen']}`)
+    imagen.setAttribute('src',`./img/${obj['imagen']}`)
 }
 
 function recuperarTipo(){
