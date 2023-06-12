@@ -74,7 +74,7 @@ function verificarTexto(){
     if (contador > 10) {
         alert(`la caja de texto posee mas de 10 caracteres numericos`)
     } else {
-        alert('la caja de texto posee menos a lo mas 10 caracteres numericos')
+        alert('la caja de texto posee a lo mas 10 caracteres numericos')
     }
 }
 
@@ -90,7 +90,6 @@ function realizarCambios(){
         obj[k] = document.getElementById(k).value
     }
     cargarSonido(obj['imagen'])
-    console.log(obj['imagen'])
     obj['visible'] = recuperarTipo()
     contenedor.style.background = obj['color']
     imagen.style.visibility = obj['visible']
